@@ -1,0 +1,64 @@
+1  $ git init
+  502  Initialized empty Git repository in C:/Users/Maria/OneDrive/Documentos/Programacion/DigitalHouse/Informatica/20230605-MariaPerez/.git/
+  503  Maria@LAPTOP-72CDVRPQ MINGW64 ~/OneDrive/Documentos/Programacion/DigitalHouse/Informatica/20230605-MariaPerez (main)
+  504  $ git remote add origin https://github.com/BarbaraPerez120500/20230605-MariaPerez.git
+  505  Maria@LAPTOP-72CDVRPQ MINGW64 ~/OneDrive/Documentos/Programacion/DigitalHouse/Informatica/20230605-MariaPerez (main)
+  506  $ touch comandos.txt main.js index.html
+  507  Maria@LAPTOP-72CDVRPQ MINGW64 ~/OneDrive/Documentos/Programacion/DigitalHouse/Informatica/20230605-MariaPerez (main)
+  508  $ ls
+  509  comandos.txt  index.html  main.js
+  510  Maria@LAPTOP-72CDVRPQ MINGW64 ~/OneDrive/Documentos/Programacion/DigitalHouse/Informatica/20230605-MariaPerez (main)
+  511  $ git add .
+  512  Maria@LAPTOP-72CDVRPQ MINGW64 ~/OneDrive/Documentos/Programacion/DigitalHouse/Informatica/20230605-MariaPerez (main)
+  513  $ git commit -m "commit 01 Maria Perez"
+  514  [main (root-commit) 8706ce3] commit 01 Maria Perez
+  515   3 files changed, 0 insertions(+), 0 deletions(-)
+  516   create mode 100644 comandos.txt
+  517   create mode 100644 index.html
+  518   create mode 100644 main.js
+  519  Maria@LAPTOP-72CDVRPQ MINGW64 ~/OneDrive/Documentos/Programacion/DigitalHouse/Informatica/20230605-MariaPerez (main)
+  520  $ git push -u origin main
+  521  Enumerating objects: 3, done.
+  522  Counting objects: 100% (3/3), done.
+  523  Delta compression using up to 12 threads
+  524  Compressing objects: 100% (2/2), done.
+  525  Writing objects: 100% (3/3), 262 bytes | 262.00 KiB/s, done.
+  526  Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+  527  To https://github.com/BarbaraPerez120500/20230605-MariaPerez.git
+  528   * [new branch]      main -> main
+  529  branch 'main' set up to track 'origin/main'.
+  530  Maria@LAPTOP-72CDVRPQ MINGW64 ~/OneDrive/Documentos/Programacion/DigitalHouse/Informatica/20230605-MariaPerez (main)
+  531  $ git branch
+  532  * main
+  533  Maria@LAPTOP-72CDVRPQ MINGW64 ~/OneDrive/Documentos/Programacion/DigitalHouse/Informatica/20230605-MariaPerez (main)
+  534  $ git branch feature
+  535  Maria@LAPTOP-72CDVRPQ MINGW64 ~/OneDrive/Documentos/Programacion/DigitalHouse/Informatica/20230605-MariaPerez (main)
+  536  $ git checkout feature
+  537  clear
+  538  mkdir Hardware Software SeguridadInformatica
+  539  ls
+  540  cd Hardware
+  541  touch resumen.txt
+  542  ls
+  543  cd ../Software
+  544  touch resumen.txt
+  545  ls
+  546  cd ../SeguridadInformatica
+  547  touch resumen.txt
+  548  ls
+  549  ls -R
+  550  cd ..
+  551  ls -R
+  552  git add .
+  553  git commit -m "commit 02 Maria Perez"
+  554  git push -u origin feature
+  555  git checkout main
+  556  mv main.js resumenHardware.txt
+  557  mv index.html resumenSoftware.txt
+  558  nano resumenSoftware.txt
+  559  nano resumenHardware.txt
+  560  git add resumenSoftware.txt resumenHardware.txt
+  561  git commit -m "commit 03 Maria Perez"
+  562  ls
+  563  nano comandos.txt
+
